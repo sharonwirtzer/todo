@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* general */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9edf0;
+}
+
+.bar {
+    float: left;
+}
+.bar:hover {
+    opacity: 0.4;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(var(--d87, 255, 255, 255), 1);
+    border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.nav li a {
+    display: block;
+    color: rgb(121, 119, 119);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+ .icon{
+    height: 35px;
+    cursor: pointer;
+    padding: 15px;
+} 
+
+h1{
+    background-color: #4681a2;
+    color: #e9edf0;
+    text-align: center;
+}
+
+/* index page */
+
+.todo-page{
+   background-color: #f5f6f7;
+    height: 550px;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+}
+
+.vl {
+    border-left: 3px solid #f5dcd9;
+    height: 100px;
+    padding: 9px;
+  }
+
+
+
+ 
+
+
+
+
+/* add page */
+
+input[type=submit] {
+    background: url("/img/plus.png");
+    border: 0;
+    height: 50px;
+    width: 50px;
+}
+input[type=submit]:hover{
+    background: url("/img/plus.gif");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* update page */
