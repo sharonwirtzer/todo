@@ -69,18 +69,5 @@ h1{
 
 /* add page */
 
-input[type=submit] {
-    background: url("/img/plus.png");
-    border: 0;
-    height: 50px;
-    width: 50px;
-}
-input[type=submit]:hover{
-    background: url("/img/plus.gif");
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    cursor: pointer;
-}
 
 /* update page */

@@ -32,7 +32,7 @@ const renderTodos = () => {
   for (let i = 0; i < todos.length; i++) {
     html += "<td>" + "<i class='bi bi-check-lg'></i>" + "</td>";
     html += "<td class=vl>";
-    html += '<a href="update-todo-details.html">' + todos[i].title + "</a>";
+    html += '<a href="update-todo.php">' + todos[i].title + "</a>";
     html += "</td>";
     html += "<td>" + todos[i].date + "</td>";
     html += "<td>" + todos[i].time + "</td>";
