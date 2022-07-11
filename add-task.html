@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="to-do.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="task-page" action="process-form.php" method="post">
+      <h1>Add new Task</h1>
+      <div class="form-field">
+        <label for="Title">Title</label>
+        <input
+          type="text"
+          name="Title"
+          id="Title"
+          class="text-field"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="Date">Need to do until..</label>
+        <input type="date" name="Date" id="Date" class="text-field" required />
+      </div>
+      <div class="form-field">
+        <label for="Time">Itll take me..</label>
+        <input
+          type="number"
+          name="Time"
+          id="Time"
+          class="text-field"
+          required
+        />
+      </div>
+      <div class="button-container">
+        <input class="button form-button" type="submit" value="Add ✔️" />
+      </div>
+    </form>
+    <footer>
+      <ul class="footer">
+        <li class="nav-bar"><a href="index.php">My Tasks</a></li>
+        <li class="nav-bar"><a href="add-task.html">Add new Task</a></li>
+        <li class="nav-bar"><a href="update-task.php">Update Task</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

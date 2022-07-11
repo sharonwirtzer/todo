@@ -1,6 +1,6 @@
 <?php
 
-include 'render-todos.php';
+include 'render-tasks.php';
 
 ?>
 
@@ -12,42 +12,40 @@ include 'render-todos.php';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>toDo</title>
+  <title>My Tasks</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous" />
 </head>
 
 <body>
-  <ul class="nav">
-    <li class="bar"><a href="index.php">Home</a></li>
-    <li class="bar"><a href="add-todo.html">Add ToDo</a></li>
-    <li class="bar"><a href="update-todo.php">Update ToDo</a></li>
-  </ul>
 
-  <div class="todo-page">
-    <h1>To Do List</h1>
-
-    <table class="todo-list">
+  <div class="task-page">
+    <h1>My Tasks</h1>
+    <table>
       <thead>
         <tr>
-          <th><i id="date" class="bi bi-sort-down-alt sort-button"></i> </th>
-          <th><i id="title" class="bi bi-sort-down sort-button"></i> </th>
+          <th> Title </th>
+          <th> Need to do until.. </th>
+          <th> Itll take me.. </th>
         </tr>
       </thead>
 
       <tbody>
         <?php
-        render_todos();
+        render_tasks();
         ?>
       </tbody>
-
     </table>
-    <a href="add-todo.html">
-                <input class="button" type="button" value="Add New todo">
-            </a>
+    <a href="add-task.html">
+      <input class="button" type="button" value="Add new task ➕">
+    </a>
   </div>
-
-  <!-- <script src="main.js"></script> -->
+  <footer>
+    <ul class="footer">
+      <li class="nav-bar"><a href="index.php">My Tasks</a></li>
+      <li class="nav-bar"><a href="add-task.html">Add new Task</a></li>
+      <li class="nav-bar"><a href="update-task.php">Update Task</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>

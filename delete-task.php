@@ -1,14 +1,16 @@
 <?php
 
+// Connect To The Database
+
 include 'php/connection.php';
 
-$todo_id = $_REQUEST['id'];
+// Delete Task
 
-$sql = "DELETE FROM todo WHERE id = '$todo_id'";
+$ID = $_REQUEST['ID'];
+
+$sql = "DELETE FROM Tasks WHERE ID = '$ID'";
 $con->query($sql);
 
 // Redirect User To The Home Page
 
 header('Location: index.php');
-
-?>

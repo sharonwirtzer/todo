@@ -1,22 +1,23 @@
 <?php
 
+// Connect To Database
+
 include 'php/connection.php';
 
-// Get todo Details From The Form
+// Get tasks Details From The Form
 
-$title = $_POST['title'];
-$date = $_POST['date'];
-$time = $_POST['time'];
+$Title = $_POST['Title'];
+$Date = $_POST['Date'];
+$Time = $_POST['Time'];
 
- // Insert todo Details Into The Database
+// Insert tasks Details Into The Database
 
- $sql = "INSERT INTO todo (title, date, time) 
-         VALUES ('$title', '$date', '$time')";
+$sql = "INSERT INTO Tasks (Title, Date, Time) 
+         VALUES ('$Title', '$Date', '$Time')";
 
 
 $con->query($sql);
 
 // Redirect User To The Homepage
 
-header('Location: index.php'); 
-
+header('Location: index.php');
